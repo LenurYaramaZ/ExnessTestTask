@@ -201,7 +201,7 @@ Function StartStopSite {
 }
  
 #Add items to the path
-AddTo-SystemPath $NugetDir, "$PackagesDir\ReportUnit.1.2.1\tools", "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\amd64"
+AddTo-SystemPath $NugetDir, "$PackagesDir\ReportUnit.1.2.1\tools"
 
 # Stop IIS before building project
 StartStopSite $ServiceName "Stop"
